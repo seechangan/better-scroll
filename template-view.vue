@@ -1,25 +1,21 @@
 <template>
 	<div>
-	         <views ref="scroll"  :scrollX="ThisX" :scrollY="ThisY" :data="ThisData">
+	     <views ref="scroll"  :scrollX="ThisX" :scrollY="ThisY" :data="ThisData">
 		<div  class="scroll-content"></div>
-	          </views>
+	     </views>
 	</div>
 </template>
 
+ï¼ˆimport views from "./base/view-scroll" ï¼‰ *æ³¨æ„,æ ¹æ®è‡ªå·±å®é™…é¡¹ç›®ç»“æ„æ›´æ”¹å¯¼å…¥åœ°å€
+
 export default {
-  components: {
-   
-    views
-  },
+  components: {views},
   data() {
     return {
-       ThisX:false,//¿ØÖÆºáÏòÊÇ·ñ¿É¹ö¶¯ 
-       ThisY:true,//¿ØÖÆÊúÏòÊÇ·ñ¿É¹ö¶¯ 
-       ThisData:[],//¸ù¾İsoltÖĞ½ÓÊÕÊ±Ëù¹æ¶¨µÄÀàĞÍÀ´´«µİ£¬Ä¬ÈÏÊÇÊı×é
+       ThisX:false,//æ§åˆ¶æ¨ªå‘æ˜¯å¦å¯æ»šåŠ¨ 
+       ThisY:true,//æ§åˆ¶ç«–å‘æ˜¯å¦å¯æ»šåŠ¨ 
+       ThisData:[],//æ ¹æ®soltä¸­æ¥æ”¶æ—¶æ‰€è§„å®šçš„ç±»å‹æ¥ä¼ é€’ï¼Œé»˜è®¤æ˜¯æ•°ç»„
     };
   }
-
-
-
 };
 
